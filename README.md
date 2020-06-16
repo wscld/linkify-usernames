@@ -14,3 +14,7 @@ convert @usernames in links
     }
     console.log(linkify.convert(text, "https://github.com",attr))
 output: >> hello world <a class="username" href="https://github.com/wscld">@wscld</a>!!!
+
+**Dependencies:**
+
+ - [create-html-element](https://www.npmjs.com/package/create-html-element)
