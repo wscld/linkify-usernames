@@ -1,0 +1,21 @@
+{
+  "name": "linkify-usernames",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "create-html-element": "^3.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^3.9.5"
+  },
+  "keywords": [],
+  "description": "replaces @usernames with links"
+}
