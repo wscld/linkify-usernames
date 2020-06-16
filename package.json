@@ -1,5 +1,6 @@
 {
-  "name": "linkify-usernames",
+  "name": "@wscld/linkify-usernames",
+  "repository": "git://github.com/wscld/linkify-usernames.git",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
