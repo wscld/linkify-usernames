@@ -19,7 +19,7 @@ var create_html_element_1 = __importDefault(require("create-html-element"));
 var regex = function () { return (/\B@([a-z0-9](?:-?[a-z0-9]){0,38})/gi); };
 var linkifyUsername = function (match, link, attributes) {
     var username = match.replace(/^@/, '');
-    var href = link + "/" + username;
+    var href = link.substr(-1) !== "/" ? link + "/" + username : link + username;
     return create_html_element_1.default({
         name: "a",
         text: match,

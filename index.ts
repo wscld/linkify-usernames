@@ -8,8 +8,9 @@ interface IAtributes {
 }
 
 const linkifyUsername = (match: string, link: string, attributes: IAtributes | null) => {
-    const username = match.replace(/^@/, '');
-    const href = link + "/" + username;
+    let username = match.replace(/^@/, '');
+    let href = link.substr(-1) !== "/" ? link + "/" + username : link + username;
+    
     return createHtmlElement({
         name: "a",
         text: match,
